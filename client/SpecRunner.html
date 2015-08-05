@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Spec Runner v2.2.0</title>
+
+  <!-- bower components files -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/backbone/backbone.js"></script>
+  <script src="bower_components/interact/interact.js"></script>
+  <script src="bower_components/snap.svg/dist/snap.svg.js"></script>
+
+  <!-- Helper files -->
+  <script src="lib/library.js"></script>
+  <script src="lib/mockData.js"></script>
+  <script src="lib/settings.js"></script>
+
+  <!-- testing frameworks -->
+  <link rel="stylesheet" href="bower_components/mocha/mocha.css">
+  <script src="bower_components/mocha/mocha.js"></script>
+  <script src="bower_components/chai/chai.js"></script>
+  <script src="bower_components/sinon/lib/sinon.js"></script>
+  <script>
+    mocha.setup('bdd');
+    window.expect = chai.expect;
+    $(function() {
+      window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
+    });
+  </script>
+
+  <!-- include source files here... -->
+  <script src="js/collections/Items.js"></script>
+  <script src="js/models/Item.js"></script>
+
+  <!-- include spec files here... -->
+  <script src="spec/ItemsSpec.js"></script>
+
+</head>
+
+<body>
+	
+	<div id="mocha"></div>
+	
+</body>
+</html>

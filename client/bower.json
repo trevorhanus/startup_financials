@@ -1,0 +1,22 @@
+{
+  "name": "chatterbox",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "underscore": "~1.8.3",
+    "bootstrap": "~3.3.5",
+    "backbone": "~1.2.1",
+    "snap.svg": "~0.4.1",
+    "interact": "~1.2.4",
+    "mocha": "~2.2.5",
+    "chai": "~3.2.0",
+    "sinon": "~1.15.4"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

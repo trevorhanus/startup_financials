@@ -1,0 +1,231 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>Startup Financials</title>
+  
+  <meta charset="utf-8">
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <!--
+  <script src="ocanvas-2.7.3.js"></script>
+  <script src="jquery-1.11.2.js"></script>
+  <script src="app.js"></script>
+  <script src="library.js"></script>
+  <script src="settings.js"></script>
+  <script src="Model.js"></script>
+  <script src="Item.js"></script>
+  <script src="display.js"></script> 
+  -->
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="../bower_components/normalize.css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="Views/main.css">
+  
+</head>
+
+<body>
+  <header class='header cf'>
+    <h1 id="logo">Startup Financials</h1>
+  </header>
+  <section class="content">
+    <div class="years-container">
+      <ul class="years">
+        <li class="year">
+          <div class="year-label">
+            2015
+          </div>
+          <ul class="months">
+            <li class="month">Jan</li>
+            <li class="month">Feb</li>
+            <li class="month">Mar</li>
+            <li class="month">Apr</li>
+            <li class="month">May</li>
+            <li class="month">Jun</li>
+            <li class="month">Jul</li>
+            <li class="month">Aug</li>
+            <li class="month">Sep</li>
+            <li class="month">Oct</li>
+            <li class="month">Nov</li>
+            <li class="month">Dec</li>
+          </ul>
+        </li>
+        <li class="year">
+          <div class="year-label">
+            2015
+          </div>
+          <ul class="months">
+            <li class="month">Jan</li>
+            <li class="month">Feb</li>
+            <li class="month">Mar</li>
+            <li class="month">Apr</li>
+            <li class="month">May</li>
+            <li class="month">Jun</li>
+            <li class="month">Jul</li>
+            <li class="month">Aug</li>
+            <li class="month">Sep</li>
+            <li class="month">Oct</li>
+            <li class="month">Nov</li>
+            <li class="month">Dec</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="table-container">
+      <ul class="classes">
+        <li class="class" id="expenses">
+          <div class="class-header vert-header">
+            <h1>Expenses</h1>
+          </div>
+          <ul class="categories">
+            <li class="category" id="G and A">
+              <div class="category-header vert-header">
+                <h2>G and A</h2>
+              </div>
+              <ul class="subcategoies" >
+                <li class="subcategory" id="Marketing">
+                  <div class="subcategory-header">
+                    <h3>Marketing</h3>
+                  </div>
+                  <ul class="items">
+                    <li class="item" id="1">$1000</li>
+                    <li class="item" id="2">$2000</li>
+                  </ul>
+                </li>
+                <li class="subcategory" id="Facilities">
+                  <div class="subcategory-header">
+                    <h3>Facilities</h3>
+                  </div>
+                  <ul class="items">
+                    <li class="item" id="3">$1,000/mo</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="category" id="Employees">
+              <div class="category-header vert-header">
+                <h2>Employees</h2>
+                <span class="settings-button"></span>
+              </div>
+              <ul class="subcategoies" >
+                <li class="subcategory" id="Marketing">
+                  <div class="subcategory-header">
+                    <h3>Marketing</h3>
+                  </div>
+                  <ul class="items">
+                    <li class="item" id="1">$1000</li>
+                    <li class="item" id="2">$2000</li>
+                  </ul>
+                </li>
+                <li class="subcategory" id="Facilities">
+                  <div class="subcategory-header">
+                    <h3>Facilities</h3>
+                  </div>
+                  <ul class="items">
+                    <li class="item" id="3">$1,000/mo</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="category" id="Startup-costs">
+              <div class="category-header vert-header">
+                <h2>Startup Costs</h2>
+              </div>
+              <ul class="subcategoies">
+                <li class="subcategory" id="Expense1">
+                  <div class="subcategory-header">
+                    <h3>Expense 1</h3>
+                  </div>
+                  <ul class="items">
+                    <li class="item" id="1">$100,000</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="class" id="debt-and-equity">
+          <div class="class-header vert-header">
+            <h1>Debt and Equity</h1>
+          </div>
+          <ul class="categories">
+            <li class="category" id="Loan1">
+              <div class="category-header vert-header">
+                <h2>Loan 1</h2>
+              </div>
+              <ul class="subcategories" >
+                <li class="subcategory" id="Marketing">
+                  <div class="subcategory-header">
+                    <h3>Marketing</h3>
+                  </div>
+                  <ul class="items">
+                    <li class="item" id="1">$1000</li>
+                    <li class="item" id="2">$2000</li>
+                  </ul>
+                </li>
+                <li class="subcategory" id="Facilities">
+                  <div class="subcategory-header">
+                    <h3>Facilities</h3>
+                  </div>
+                  <ul class="items">
+                    <li class="item" id="3">$1,000/mo</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="category" id="Employees">
+              <div class="category-header vert-header">
+                <h2>Employees</h2>
+                <span class="settings-button"></span>
+              </div>
+              <ul class="subcategoies" >
+                <li class="subcategory" id="Marketing">
+                  <div class="subcategory-header">
+                    <h3>Marketing</h3>
+                  </div>
+                  <ul class="items">
+                    <li class="item" id="1">$1000</li>
+                    <li class="item" id="2">$2000</li>
+                  </ul>
+                </li>
+                <li class="subcategory" id="Facilities">
+                  <div class="subcategory-header">
+                    <h3>Facilities</h3>
+                  </div>
+                  <ul class="items">
+                    <li class="item" id="3">$1,000/mo</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="category" id="Startup-costs">
+              <div class="category-header vert-header">
+                <h2>Startup Costs</h2>
+              </div>
+              <ul class="subcategoies">
+                <li class="subcategory" id="Expense1">
+                  <div class="subcategory-header">
+                    <h3>Expense 1</h3>
+                  </div>
+                  <ul class="items">
+                    <li class="item" id="1">$100,000</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="class" id="revenue">
+          <div class="class-header vert-header">
+            <h1>Revenue</h1>
+          </div>
+          <ul class="categories">
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <button onclick="item1.move(2)">Move item1 2 months later</button>
+</body>
+</html>
